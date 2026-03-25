@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "870492601825",
+    "project_id": "askh-english-app",
+    "storage_bucket": "askh-english-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870492601825:android:7ab0c0e77976c44ef9e6a0",
+        "android_client_info": {
+          "package_name": "com.akshenglish.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870492601825-f0ce1ff0nmenlgvnreskit0m64fsb7um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGLreJnEzTgqclZKVjDBBR7wDcJMPhuBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870492601825-f0ce1ff0nmenlgvnreskit0m64fsb7um.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "870492601825-r5mbi5hjped3v4tcq13s6u8grp3fl87e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.akshEnglish"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870492601825:android:da3fb6ff73226331f9e6a0",
+        "android_client_info": {
+          "package_name": "com.example.aksh_english"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870492601825-q0sgic6ldkg8t2a2bre0p5kde4upbcj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aksh_english",
+            "certificate_hash": "86c0f77be49c4193a9364e0861cffeea38fac961"
+          }
+        },
+        {
+          "client_id": "870492601825-f0ce1ff0nmenlgvnreskit0m64fsb7um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGLreJnEzTgqclZKVjDBBR7wDcJMPhuBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870492601825-f0ce1ff0nmenlgvnreskit0m64fsb7um.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "870492601825-r5mbi5hjped3v4tcq13s6u8grp3fl87e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.akshEnglish"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

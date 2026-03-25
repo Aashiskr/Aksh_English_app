@@ -1,4 +1,4 @@
-package com.example.aksh_english
+package com.akshenglish.app
 
 import io.flutter.embedding.android.FlutterActivity
 

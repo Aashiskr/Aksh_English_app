@@ -1,24 +1,49 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 // 👇 Imports
 import 'text_chat_screen.dart';
 import 'voice_chat_screen.dart';
 import 'stats_screen.dart';
-import 'video_player_screen.dart'; // ✅ Ye naya import zaroori hai
+import 'video_player_screen.dart';
+import 'profile_screen.dart'; // ✅ Profile Screen import kiya
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // Current user ka data fetch kar rahe hain DP ke liye
+    final user = FirebaseAuth.instance.currentUser;
+
     return Scaffold(
       backgroundColor: Colors.white,
 
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+
+        // 🔴 Naya Profile Icon (Top Left Corner)
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfileScreen()),
+              );
+            },
+            child: CircleAvatar(
+              backgroundColor: Colors.deepPurple.shade100,
+              // Google wali photo yahan dikhegi
+              backgroundImage: user?.photoURL != null ? NetworkImage(user!.photoURL!) : null,
+              child: user?.photoURL == null ? const Icon(Icons.person, color: Colors.deepPurple) : null,
+            ),
+          ),
+        ),
+
         actions: [
-          // 🔴 Updated Button: Ab ye seedha Video Player kholega
+          // Video Player Button
           TextButton.icon(
             onPressed: () {
               Navigator.push(
